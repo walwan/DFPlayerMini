@@ -1,0 +1,11 @@
+{
+  "name": "DFPlayerMini",
+  "version": "1.2.4",
+  "repository":
+  {
+      "type": "git",
+      "url": "https://github.com/walwan/DFPlayerMini_Fast.git"
+  },
+  "platforms": "*",
+  "framework": "*"
+}
