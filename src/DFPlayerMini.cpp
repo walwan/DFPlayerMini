@@ -265,7 +265,7 @@ void DFPlayerMini::playbackSource(uint8_t source) {
   case PLAYBACK_SRC::TF:
   case PLAYBACK_SRC::AUX:
   case PLAYBACK_SRC::SLEEP:
-  case PLAYBACK_SRC::FLASH:
+    //  case PLAYBACK_SRC::FLASH:
     break;
   default:
     source = PLAYBACK_SRC::TF;

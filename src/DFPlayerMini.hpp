@@ -140,7 +140,7 @@ constexpr uint8_t U = 1;
 constexpr uint8_t TF = 2;
 constexpr uint8_t AUX = 3;
 constexpr uint8_t SLEEP = 4;
-constexpr uint8_t FLASH = 5;
+// constexpr uint8_t FLASH = 5;
 } // namespace PLAYBACK_SRC
 
 /** Base Volume Adjust Value */
