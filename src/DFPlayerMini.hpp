@@ -25,8 +25,7 @@
 /**************************************************************************/
 /*!
         @brief  Namespace for dfplayermini
-*/
-/**************************************************************************/
+*//**************************************************************************/
 namespace DFPLAYERMINI {
 
 /** Packet Values */
@@ -184,7 +183,7 @@ class DFPlayerMini {
                         0,
                         0,
                         PACKET::END};
-  stack_t _recStack;
+  stack_t _recvStack;
 
   static uint16_t calChecksum(stack_t &_stack);
   void setChecksum();
@@ -252,6 +251,7 @@ public:
   // void printStack(stack _stack);
   void getStack(uint8_t *_stack) const;
   void getStack(stack_t &_stack) const;
+  void setStack(uint8_t *_stack);
   //  void printError();
 };
 

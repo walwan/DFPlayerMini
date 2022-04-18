@@ -973,6 +973,27 @@ void DFPlayerMini::getStack(stack_t &_stack) const { _stack = _sendStack; }
 
 /**************************************************************************/
 /*!
+        @brief    Save the current received packet from the array _stack points
+                  to.
+        @param    _stack
+                  uint8_t array to get the packet.
+*/
+/**************************************************************************/
+void DFPlayerMini::setStack(uint8_t *_stack) {
+  _recvStack.start_byte = _stack[0];
+  _recvStack.version = _stack[1];
+  _recvStack.length = _stack[2];
+  _recvStack.command = _stack[3];
+  _recvStack.feedback = _stack[4];
+  _recvStack.paramMSB = _stack[5];
+  _recvStack.paramLSB = _stack[6];
+  _recvStack.checksumMSB = _stack[7];
+  _recvStack.checksumLSB = _stack[8];
+  _recvStack.end_byte = _stack[9];
+}
+
+/**************************************************************************/
+/*!
         @brief  Print the error description if an error has been received
 */
 /**************************************************************************/
